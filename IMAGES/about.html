@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product - Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logopo.png" width="250px" height="250px">
+                </a>
+
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="product.html">Product</a> </li>
+                    <li> <a href="about.html">About</a> </li>
+                    <li> <a href="contact.html">Contact</a> </li>
+                    <li> <a href="account.html">Account</a> </li>
+                </ul>
+            </nav>
+            <a href="cart.html"> <img src="cart.png" width="90px" height="90px"></a>
+            <img src="menu.png" class="menu" onclick="menutoggle()">
+        </div>
+    </div>
+    <!--accountpage-->
+    <div class="about-us-container">
+        <h1 class="aboutus">About Us</h1>
+
+        <div class="about-us-img-container">
+            <img src="logopo.png" alt="about us image">
+        </div>
+        <p>Welcome to <b>Company Name</b>, your one-stop shop for <b>products/services</b>. We are a team of dedicated individuals who are passionate about providing our customers with high-quality <b>products/services</b> at affordable prices.</p>
+        <p>Our company was founded in <b>year</b> with the goal of making it easy for customers to find and purchase the <b>products/services</b> they need. We understand the importance of <b>products/services</b> and strive to provide our customers with
+            the best possible shopping experience.</p>
+        <p>We pride ourselves on our wide selection of <b>products/services</b>, fast and reliable shipping, and excellent customer service. Our team is available to answer any questions you may have and to help you find the perfect <b>product/service</b>            for your needs.</p>
+        <p>Thank you for choosing <b>Company Name</b>. We look forward to serving you.</p>
+    </div>
+
+
+
+
+
+
+    <!-------footer------>
+    <div class="footer">
+        <div class="smalL-container">
+            <div class="row">
+                <div class="footercol1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone</p>
+                    <div class="applogo">
+                        <img src="app-store.png" alt="">
+                        <img src="play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footercol2">
+                    <img src="logo-white.png" alt="">
+                    <p>Our Purpose is to Sustainability Make the Pleasure and Benifits of Sports Accessilibity to the Many </p>
+                </div>
+                <div class="footercol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footercol4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Nike</p>
+        </div>
+    </div>
+    <!---------------js for toggle menu    -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!---------------js for toggle Form    -->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
