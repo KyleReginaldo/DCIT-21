@@ -20,7 +20,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="logopo.png" width="250px" height="250px">
+                <a href="index.html"><img src="IMAGES/logopo.png" width="250px" height="250px">
                 </a>
 
             </div>
@@ -34,42 +34,89 @@
                     <li> <a href="account.html">Account</a> </li>
                 </ul>
             </nav>
-            <a href="cart.html"> <img src="cart.png" width="90px" height="90px"></a>
-            <img src="menu.png" class="menu" onclick="menutoggle()">
+            <a href="cart.html"> <img src="IMAGES/cart.png" width="90px" height="90px"></a>
+            <img src="IMAGES/menu.png" class="menu" onclick="menutoggle()">
         </div>
     </div>
-    <!--accountpage-->
-    <div class="account-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="backgroundimage.webp" alt="">
-                </div>
-                <div class="col-2">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="login()">Login</span>
-                            <span onclick="register()">Register</span>
-                            <hr id="Indicator">
+    <!-----cart item details------>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="IMAGES/5.webp" alt="">
+                        <div>
+                            <p>Air Jordan XXXVI RUI</p>
+                            <small>Price: ₱10,995 </small>
+                            <br>
+                            <a href="">Remove</a>
                         </div>
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
-                            <a href="">Forgot Password</a>
-                        </form>
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Registers</button>
-
-                        </form>
                     </div>
-                </div>
-            </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱10,995 </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="IMAGES/6.webp" alt="">
+                        <div>
+                            <p>Air Jordan XXXVII Tatum PF</p>
+                            <small>Price:₱10,995</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱10,995</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="IMAGES/7.webp" alt="">
+                        <div>
+                            <p>Nike Air Deldon 'Together We Fly</p>
+                            <small>Price: ₱6,595 </small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱6,595</td>
+            </tr>
+        </table>
+
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₱28,585</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>₱200</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>₱28,785</td>
+                </tr>
+            </table>
         </div>
     </div>
+
+
+
 
 
     <!-------footer------>
@@ -125,31 +172,6 @@
             }
         }
     </script>
-
-    <!---------------js for toggle Form    -->
-    <script>
-        var LoginForm = document.getElementById("LoginForm");
-        var RegForm = document.getElementById("RegForm");
-        var Indicator = document.getElementById("Indicator");
-
-
-
-        function register() {
-            RegForm.style.transform = "translateX(0px)";
-            LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(100px)";
-        }
-
-        function login() {
-            RegForm.style.transform = "translateX(300px)";
-            LoginForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-    </script>
-
-
-
-
 </body>
 
 </html>
